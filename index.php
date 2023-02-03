@@ -9,7 +9,7 @@
 // Ideally we would store them securely outside of this script
 $app_secret = 'e6932a50f2cc2d5025833e03ad44771c';
 $access_token = 'DQVJ2azZAmVmw4Y1c5QnFjV0pyajVETzdRdkR0TDRWSzB6S09RSG5ZASnUzMGw3UjJ0ZAThPckhpdmUxemtsMldabV9SZA3BQai0tTkptSlUxUkg4MTJFaGV5TXNjUzFjaGd5QXVrVlJFX1F1SkNYNmxUVW5SZAlFmX2lrZAkdiSElxT2l2c0gxRXFIUTZAyRGp3YkNtMXV5am1fOGQ4WDFXYkF1YzBsTXBjZAmtFWlhFRGM1WGNUME5nMFpmaEF0RDlXdzZAHTU5sQjRB';
-$my_verify_token = "nguyenthanhdung1401";
+$my_verify_token = 'nguyenthanhdung1401';
 
 // We need to response to the challenge when we save changes for webhooks in the Workplace Integrations panel
 if (isset($_GET['hub_verify_token']) && $_GET['hub_verify_token'] == $verify_token) {
