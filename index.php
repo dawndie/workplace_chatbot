@@ -70,7 +70,7 @@ $server_output = curl_exec($ch); // We can optionally process the server output
 // We compose a different response depending on the text that the user sent to the bot
 if ("recognition" == $received_text) { // When the word recognition is received
     $fields = array(
-        "message" => array("text" => "mike check"),
+        "message" => array("text" => strval($data)),
         "recipient" => array("id" => $recipient),
         "messaging_type" => "RESPONSE"
     );
@@ -109,13 +109,13 @@ if ("recognition" == $received_text) { // When the word recognition is received
                 "messaging_type" => "RESPONSE"
             );
         }
-    // }
+        // }
     } else {
-    	$fields = array(
-    		"message" => array("text" => "Unfortunately I don't understand this command. Please try with other command."),
-    		"recipient" => array("id" => $recipient),
-    		"messaging_type" => "RESPONSE"
-    	);
+        $fields = array(
+            "message" => array("text" => "Unfortunately I don't understand this command. Please try with other command."),
+            "recipient" => array("id" => $recipient),
+            "messaging_type" => "RESPONSE"
+        );
     }
 }
 
