@@ -1,9 +1,9 @@
 <?php
 // Enabling errors for debugging.
 // Make sure to comment it before pushing it to production
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
 
 // Variables to be replaced
 // Ideally we would store them securely outside of this script
@@ -32,6 +32,7 @@ if (!isset($headers['X-Hub-Signature']) || ($headers['X-Hub-Signature'] != $sign
 
 // Obtain data sent by the webhook
 $data = json_decode($request_body, true);
+echo ($data);
 logging_to_txt_file($request_body);
 // Obtain recipient id from the webhook event data
 $recipient = $data['entry'][0]['messaging'][0]['sender']['id'];
