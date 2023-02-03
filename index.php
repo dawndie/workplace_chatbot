@@ -109,13 +109,13 @@ if ("recognition" == $received_text) { // When the word recognition is received
                 "messaging_type" => "RESPONSE"
             );
 		}
-	} else {
-		$fields = array(
-			"message" => array("text" => "Unfortunately I don't understand this command. Please try with other command."),
-			"recipient" => array("id" => $recipient),
-			"messaging_type" => "RESPONSE"
-		);
-	}
+	// } else {
+	// 	$fields = array(
+	// 		"message" => array("text" => "Unfortunately I don't understand this command. Please try with other command."),
+	// 		"recipient" => array("id" => $recipient),
+	// 		"messaging_type" => "RESPONSE"
+	// 	);
+	// }
 }
 
 // We send the response to the Workplace API so the message can be delivered to the user
