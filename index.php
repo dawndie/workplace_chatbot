@@ -77,7 +77,7 @@ if ("recognition" == $received_text) { // When the word recognition is received
 } else if (strpos($received_text, '@') !== false) {
     $fields = array(
         // "message" => array("text" => "Cool! We are sharing some love with " . $received_text . ". Can you tell us the reason?", "quick_replies" => array(
-        "message" => array("text" => $data, "quick_replies" => array(
+        "message" => array("text" => $request_body, "quick_replies" => array(
             array(
                 "content_type" => "text",
                 "title" => "Build Social Value",
