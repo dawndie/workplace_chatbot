@@ -70,7 +70,7 @@ $server_output = curl_exec($ch); // We can optionally process the server output
 // We compose a different response depending on the text that the user sent to the bot
 if ("recognition" == $received_text) { // When the word recognition is received
     $fields = array(
-        "message" => array("text" => "Hello! Thanks for using our recognition service. Let's share some love with the rest of the team. Who you want to nominate? Please give an email:"),
+        "message" => array("text" => $data),
         "recipient" => array("id" => $recipient),
         "messaging_type" => "RESPONSE"
     );
