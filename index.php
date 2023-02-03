@@ -7,9 +7,9 @@ error_reporting(E_ALL);
 
 // Variables to be replaced
 // Ideally we would store them securely outside of this script
-$app_secret = 'app_secret';
-$access_token = 'replace_with_your_access_token';
-$verify_token = 'replace_with_your_verify_token';
+$app_secret = '299d714c7e92ff917d521b1c569e9837';
+$access_token = 'DQVJ1Nk43bzQtbTUxb2RnQlBWSTMwbjBYd2lrQ3dEbFF2U2VNaHBwQUF2eG1aSkZALUk5jQl9ILTNteTUwcDhDWkZAQOEZAmLTlvRW5FU29xc1VVcEE2c0s2aHZAaZAWNQS2JOYmJkbU9TUnBlVFVEN1dOSXFrYjEzcHpKclg2RFdPV2ljWXFJODRDUWNNc3BKYmV0eWRQUll3UHBObWpYSEZAJZAkwxOUtjS1N3X2haR2hzYkxOLURBanltMEdyTGVTeXRZAZA2RLMk1RemZA0SVZAiNTk3NgZDZD';
+$verify_token = 'verify';
 
 // We need to response to the challenge when we save changes for webhooks in the Workplace Integrations panel
 if (isset($_GET['hub_verify_token']) && $_GET['hub_verify_token'] == $verify_token) {
